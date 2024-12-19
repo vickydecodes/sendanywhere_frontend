@@ -15,6 +15,7 @@ export function ApiProvider({ children }) {
   const port = import.meta.env.VITE_FRONTEND_PORT;
   const uploadUrl = import.meta.env.VITE_UPLOAD_URL;
   const receiveUrl = import.meta.env.VITE_RECEIVE_URL;
+  const downloadUrl = import.meta.env.VITE_DOWNLOAD_URL
 
   console.log(port)
   console.log(port + "/upload")
@@ -58,7 +59,7 @@ export function ApiProvider({ children }) {
     try {
       if (file && file.originalName && file.fileUrl) {
         const link = document.createElement("a");
-        link.href = file.fileUrl;
+        link.href = `${downloadUrl}${file.code}`;
         link.download = file.originalName;
         document.body.appendChild(link);
         link.click();

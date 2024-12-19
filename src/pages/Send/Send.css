@@ -1,0 +1,94 @@
+/* Container for centering the content */
+.send_container { 
+    height: 100vh !important;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f6f9; /* Light background color */
+}
+
+/* Main content container */
+.send_content {
+    height: 600px;
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid #ccc; /* Lighter border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading */
+.send_content h1 {
+    font-size: 24px;
+    color: #333; /* Dark text for the heading */
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+/* Submit button */
+button[type="submit"] {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Clear button */
+.send_content button {
+    margin-top: 20px;
+    background-color: #e0e0e0; /* Light gray background */
+    color: #333;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.send_content button:hover {
+    background-color: #c0c0c0; /* Darker gray on hover */
+}
+
+/* File input field */
+input[type="file"] {
+    display: none;
+}
+
+/* Custom file input label */
+.send_content label {
+    padding: 10px;
+    background-color: #f7f7f7; /* Light background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send_content label:hover {
+    background-color: #e9e9e9; /* Hover effect */
+}
